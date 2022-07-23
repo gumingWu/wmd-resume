@@ -4,7 +4,8 @@
   "description": "md简历系统",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:md": "pnpm build --filter @wmd/md-parser",
+    "build:ed": "pnpm build --filter @wmd/editor"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/gumingWu/wmd-resume/issues"
   },
-  "homepage": "https://github.com/gumingWu/wmd-resume#readme"
+  "homepage": "https://github.com/gumingWu/wmd-resume#readme",
+  "dependencies": {
+    "tsup": "^6.1.3"
+  }
 }
