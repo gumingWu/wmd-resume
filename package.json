@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build:md": "pnpm build --filter @wmd/md-parser",
-    "build:ed": "pnpm build --filter @wmd/editor"
+    "build:ed": "pnpm build --filter @wmd/editor",
+    "playground": "pnpm serve --filter @wmd/playground"
   },
   "repository": {
     "type": "git",
