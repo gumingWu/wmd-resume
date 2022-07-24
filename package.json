@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "build:md": "pnpm build --filter @wmd/md-parser",
-    "build:ed": "pnpm build --filter @wmd/editor",
-    "playground": "pnpm serve --filter @wmd/playground"
+    "playground": "pnpm dev --filter @wmd/playground"
   },
   "repository": {
     "type": "git",
+    
     "url": "git+https://github.com/gumingWu/wmd-resume.git"
   },
   "author": "",
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/gumingWu/wmd-resume#readme",
   "dependencies": {
-    "tsup": "^6.1.3"
+    "tsup": "^6.1.3",
+    "typescript": "^4.7.4"
   }
 }

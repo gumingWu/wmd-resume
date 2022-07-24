@@ -4,7 +4,6 @@ md简历系统
 ## 工程介绍
 - md-parser：进行md内容解析
 - html-render：进行html内容渲染
-- editor：在线文档编辑器
 - playground：演示平台
 
 ## 预设功能
