@@ -1,5 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>Im playground</div>
+  <Header></Header>
+  <Editor></Editor>
+  <Resume></Resume>
 </template>
