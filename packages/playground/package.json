@@ -4,18 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "vite"
+    "dev": "vite --open"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@vitejs/plugin-vue": "^3.0.1",
+    "markdown-it": "^13.0.1",
     "unplugin-vue-components": "^0.21.1",
     "vite": "^3.0.2",
     "vue": "^3.2.37"
   },
   "devDependencies": {
+    "@types/markdown-it": "^12.2.3",
     "normalize.css": "^8.0.1"
   }
 }

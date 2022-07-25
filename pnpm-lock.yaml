@@ -10,11 +10,8 @@ importers:
       tsup: 6.1.3_typescript@4.7.4
       typescript: 4.7.4
 
-  packages/editor:
-    specifiers:
-      '@wmd/md-parser': workspace:^1.0.0
-    dependencies:
-      '@wmd/md-parser': link:../md-parser
+  packages/html-render:
+    specifiers: {}
 
   packages/md-parser:
     specifiers:
@@ -24,17 +21,21 @@ importers:
 
   packages/playground:
     specifiers:
+      '@types/markdown-it': ^12.2.3
       '@vitejs/plugin-vue': ^3.0.1
+      markdown-it: ^13.0.1
       normalize.css: ^8.0.1
       unplugin-vue-components: ^0.21.1
       vite: ^3.0.2
       vue: ^3.2.37
     dependencies:
       '@vitejs/plugin-vue': 3.0.1_vite@3.0.2+vue@3.2.37
+      markdown-it: 13.0.1
       unplugin-vue-components: 0.21.1_vite@3.0.2+vue@3.2.37
       vite: 3.0.2
       vue: 3.2.37
     devDependencies:
+      '@types/markdown-it': 12.2.3
       normalize.css: 8.0.1
 
 packages:
@@ -77,6 +78,21 @@ packages:
       estree-walker: 2.0.2
       picomatch: 2.3.1
     dev: false
+
+  /@types/linkify-it/3.0.2:
+    resolution: {integrity: sha512-HZQYqbiFVWufzCwexrvh694SOim8z2d+xJl5UNamcvQFejLY/2YUtzXHYi3cHdI7PMlS8ejH2slRAOJQ32aNbA==}
+    dev: true
+
+  /@types/markdown-it/12.2.3:
+    resolution: {integrity: sha512-GKMHFfv3458yYy+v/N8gjufHO6MSZKCOXpZc5GXIWWy8uldwfmPn98vp81gZ5f9SVw8YYBctgfJ22a2d7AOMeQ==}
+    dependencies:
+      '@types/linkify-it': 3.0.2
+      '@types/mdurl': 1.0.2
+    dev: true
+
+  /@types/mdurl/1.0.2:
+    resolution: {integrity: sha512-eC4U9MlIcu2q0KQmXszyn5Akca/0jrQmwDRgpAMJai7qBWq4amIQhZyNau4VYGtCeALvW1/NtjzJJ567aZxfKA==}
+    dev: true
 
   /@vitejs/plugin-vue/3.0.1_vite@3.0.2+vue@3.2.37:
     resolution: {integrity: sha512-Ll9JgxG7ONIz/XZv3dssfoMUDu9qAnlJ+km+pBA0teYSXzwPCIzS/e1bmwNYl5dcQGs677D21amgfYAnzMl17A==}
