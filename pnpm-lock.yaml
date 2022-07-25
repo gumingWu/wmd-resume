@@ -24,6 +24,7 @@ importers:
       '@types/markdown-it': ^12.2.3
       '@vitejs/plugin-vue': ^3.0.1
       markdown-it: ^13.0.1
+      monaco-editor: ^0.33.0
       normalize.css: ^8.0.1
       unplugin-vue-components: ^0.21.1
       vite: ^3.0.2
@@ -31,6 +32,7 @@ importers:
     dependencies:
       '@vitejs/plugin-vue': 3.0.1_vite@3.0.2+vue@3.2.37
       markdown-it: 13.0.1
+      monaco-editor: 0.33.0
       unplugin-vue-components: 0.21.1_vite@3.0.2+vue@3.2.37
       vite: 3.0.2
       vue: 3.2.37
@@ -784,6 +786,10 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       brace-expansion: 2.0.1
+    dev: false
+
+  /monaco-editor/0.33.0:
+    resolution: {integrity: sha512-VcRWPSLIUEgQJQIE0pVT8FcGBIgFoxz7jtqctE+IiCxWugD0DwgyQBcZBhdSrdMC84eumoqMZsGl2GTreOzwqw==}
     dev: false
 
   /ms/2.1.2:

@@ -6,7 +6,9 @@ const props = defineProps({
   source: String as PropType<string>
 })
 
-const md = new MarkdownIt()
+const md = new MarkdownIt({
+  html: true
+})
 let sourceToMd: any = ref('')
 watchEffect(() => {
   sourceToMd.value = md.render(props.source!)
@@ -15,6 +17,5 @@ watchEffect(() => {
 </script>
 
 <template>
-  <div>{{ source }}</div>
   <div v-html="sourceToMd"></div>
 </template>
