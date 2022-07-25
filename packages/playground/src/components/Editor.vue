@@ -1,17 +1,25 @@
 <script setup lang="ts">
 import * as monaco from 'monaco-editor'
 import { onMounted } from 'vue';
+import { basicTemplate } from '../utils/templates';
 
 defineProps({
-  value: String
+  modelValue: String
 })
 
+const emits = defineEmits(['update:modelValue'])
+
 onMounted(() => {
-  monaco.editor.create(document.getElementById('container')!, {
-    value: [''].join('\n'),
+  emits('update:modelValue', basicTemplate)
+  const editor = monaco.editor.create(document.getElementById('container')!, {
+    value: basicTemplate,
 	  language: 'markdown'
   })
   monaco.editor.setTheme('vs-dark')
+
+  editor.onDidChangeModelContent(e => {
+    emits('update:modelValue', editor.getValue())
+  })
 })
 </script>
 
