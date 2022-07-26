@@ -8,12 +8,14 @@ const input = ref('')
   <Header></Header>
   <div class="body">
     <Editor v-model="input"></Editor>
+    <Dragger></Dragger>
     <Resume :source="input"></Resume>
   </div>
 </template>
 
 <style scoped>
 .body {
+  height: 100%;
   display: flex;
   margin: 30px;
 }

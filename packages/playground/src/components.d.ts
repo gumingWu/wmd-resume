@@ -7,6 +7,7 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    Dragger: typeof import('./components/Dragger.vue')['default']
     Editor: typeof import('./components/Editor.vue')['default']
     Header: typeof import('./components/Header.vue')['default']
     Icon: typeof import('./components/Icon.vue')['default']

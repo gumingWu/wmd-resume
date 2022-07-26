@@ -13,16 +13,17 @@ onMounted(() => {
   emits('update:modelValue', basicTemplate)
   const editor = monaco.editor.create(document.getElementById('container')!, {
     value: basicTemplate,
-	  language: 'markdown'
+	  language: 'markdown',
+    automaticLayout: true // <<== the important part
   })
   monaco.editor.setTheme('vs-dark')
 
-  editor.onDidChangeModelContent(e => {
+  editor.onDidChangeModelContent(()=> {
     emits('update:modelValue', editor.getValue())
   })
 })
 </script>
 
 <template>
-  <div id="container" style="width: 600px; height: 600px; border: 1px solid #ccc"></div>
+  <div id="container" style="width: 50%; height: 100%; border: 1px solid #ccc"></div>
 </template>
