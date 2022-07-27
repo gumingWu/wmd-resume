@@ -9,7 +9,11 @@ const input = ref('')
   <div class="body">
     <Editor v-model="input"></Editor>
     <Dragger></Dragger>
-    <Resume :source="input"></Resume>
+    <div class="preview">
+      <Page>
+        <Resume :source="input"></Resume>
+      </Page>
+    </div>
   </div>
 </template>
 
@@ -18,5 +22,11 @@ const input = ref('')
   height: 100%;
   display: flex;
   margin: 30px;
+}
+
+.preview {
+  background-color: aliceblue;
+  width: 100%;
+  min-height: 1500px;
 }
 </style>

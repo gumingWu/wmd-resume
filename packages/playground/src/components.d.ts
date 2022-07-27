@@ -11,6 +11,7 @@ declare module '@vue/runtime-core' {
     Editor: typeof import('./components/Editor.vue')['default']
     Header: typeof import('./components/Header.vue')['default']
     Icon: typeof import('./components/Icon.vue')['default']
+    Page: typeof import('./components/Page.vue')['default']
     Resume: typeof import('./components/Resume.vue')['default']
     SocialLinks: typeof import('./components/SocialLinks.vue')['default']
   }
