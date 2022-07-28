@@ -27,6 +27,7 @@ const input = ref('')
 .preview {
   background-color: aliceblue;
   width: 100%;
-  min-height: 1500px;
+  height: 100%;
+  overflow-y: auto;
 }
 </style>
